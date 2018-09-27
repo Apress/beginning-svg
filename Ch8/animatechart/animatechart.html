@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>Beginning SVG: Animating a Donut Chart</title>
+  <link rel="stylesheet" href="css/animatechart.css">
+</head>
+<body>
+  <h2>Beginning SVG: Animating a Donut Chart</h2>
+  <svg x="0px" y="0px" width="340px" height="333px" viewBox="0 0 340 333">
+    <defs>
+      <linearGradient id="gradient">
+        <stop stop-color="#2f4f4f" offset="0%"></stop>
+        <stop stop-color="#bbd6d6" offset="100%"></stop>
+      </linearGradient>
+    </defs>
+
+    <g transform="translate(115, 115)">
+      <circle r="70" class="circle-back" />
+      <circle r="70" class="circle-front" transform="rotate(270.1)" />   
+      <text x="-30" y="10">25%</text>    
+    </g>
+  </svg>
+</body>
+</html>

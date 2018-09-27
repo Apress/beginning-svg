@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'pt_sansregular';
+  src: url('../font/pt_sansregular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'pt_sansregular', sans-serif;
+  padding: 2rem;
+  font-size: 18px;
+  background: #eee;
+}
+
+h2 {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center {
+  margin: 20px auto;
+  text-align: center;
+}
+
+svg {
+  display: block;
+  position: absolute;
+  top: 35%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}

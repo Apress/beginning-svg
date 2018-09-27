@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'pt_sansregular';
+  src: url('../font/pt_sansregular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'pt_sansregular', sans-serif;
+  padding: 2rem;
+  font-size: 18px;
+}
+
+svg {
+	outline: 5px solid #000;
+}

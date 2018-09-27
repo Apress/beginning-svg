@@ -1,0 +1,20 @@
+{
+  "name": "vivus",
+  "version": "1.0.0",
+  "description": "Convert fonts to SVG paths",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vivus",
+    "convert",
+    "SVG",
+    "paths"
+  ],
+  "author": "Alex Libby",
+  "license": "ISC",
+  "dependencies": {
+    "text-to-svg": "^3.1.3"
+  }
+}

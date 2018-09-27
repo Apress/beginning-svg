@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'pt_sansregular';
+  src: url('../font/pt_sansregular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'pt_sansregular', sans-serif;
+}
+
+body {
+  padding: 2rem;
+  font-size: 1.125rem;
+}
+
+text {
+  font-size: 16px;
+}
+
+.bartext {
+  fill: #fff;
+}
+
+.bar {
+  fill: slategrey;
+}
+
+.bar:hover {
+  fill: silver;
+}
+
+.bar:hover + text.bartext {
+  fill: #000;
+}
+
+.axis {
+  font: 0.625rem sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}

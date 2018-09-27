@@ -1,0 +1,25 @@
+      <!-- Add bars, text and stying -->
+      <g>
+        <rect class="bar" x="10" width="41" y="200.66" height="249"></rect>
+        <text class="bartext" dy=".71em" y="15" x="-255" transform="rotate(-90)">jQuery</text>
+      </g>
+      <g>
+        <rect class="bar" x="54" width="41" y="397.14" height="52"></rect>
+        <text class="bartext" dy=".71em" y="64" x="-430" transform="rotate(-90)">Riot</text>
+      </g>
+      <g>
+        <rect class="bar" x="98" width="41" y="351.44" height="98"></rect>
+        <text class="bartext" dy=".71em" y="104" x="-400" transform="rotate(-90)">React</text>
+      </g>
+      <g>
+        <rect class="bar" x="142" width="41" y="299.32" height="150"></rect>
+        <text class="bartext" dy=".71em" y="149" x="-350" transform="rotate(-90)">Vue.js</text>
+      </g>
+      <g>
+        <rect class="bar" x="186" width="41" y="150" height="300"></rect>
+        <text class="bartext" dy=".71em" y="194" x="-227" transform="rotate(-90)">JavaScript</text>
+      </g>
+      <g>
+        <rect class="bar" x="230" width="41" y="368.94" height="81"></rect>
+        <text class="bartext" dy=".71em" y="240" x="-430" transform="rotate(-90)">Node.js</text>
+      </g>

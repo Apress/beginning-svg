@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'pt_sansregular';
+  src: url('../font/pt_sansregular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'pt_sansregular', sans-serif;
+  font-size: 18px;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+}
+
+html, body {
+  height: 100%;
+  padding: 0;
+  margin 0;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 102%;
+  height: 250px;
+  z-index: 10;
+}
+
+svg {
+  width: 100%;
+  height: inherit;
+}
+
+svg text {
+  text-anchor: middle;
+}
+
+svg #background {
+  fill: #666666;
+}
+
+svg #title {
+  letter-spacing: -2px;
+  font-size: 6rem;
+  font-weight: 800;
+}
+
+svg #subtitle {
+  letter-spacing: 8px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+svg #base {
+  fill: black;
+  -webkit-mask: url(#mask);
+          mask: url(#mask);
+}
+
+section.intro {
+  background: url(../img/landscape.png) no-repeat top center;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+}

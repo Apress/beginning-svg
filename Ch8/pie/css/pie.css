@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'pt_sansregular';
+  src: url('../font/pt_sansregular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'pt_sansregular', sans-serif;
+  padding: 2rem;
+  font-size: 1.125rem;
+}
+
+svg {
+  width: 300px;
+  border-radius: 50%;
+  transform: rotate(-90deg);
+  margin-left: 1.25rem;
+  margin-top: 1.875rem;
+}
+
+text {
+  font-size: 0.6rem;
+}
+
+.pie {
+  width: 300px;
+  border-radius: 50%;
+}
+
+.pie circle {
+  fill: none;
+  stroke: antiquewhite;
+  stroke-width: 31;
+}
+
+g:nth-child(2) > circle {
+  stroke: gainsboro;
+}
+
+g:nth-child(3) > circle {
+  stroke: dimgrey;
+}
+
+g:nth-child(4) > circle {
+  stroke: darkgrey;
+}

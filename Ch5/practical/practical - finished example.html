@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>Beginning SVG: Animating Filter Changes</title>
+  <link rel="stylesheet" href="css/practical.css">
+</head>
+<body>
+  <h2>Beginning SVG: A Practical Use of SVG Filters</h2>
+
+  <svg xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <filter id="blurlayer" width="110%" height="100%">
+        <feColorMatrix type="matrix" values=".7 0 0 0 0 0 .7  0 0 0 0 0 .7 0 0 0 0 0 1 0" />
+        <feGaussianBlur stdDeviation="4" result="blur"/>
+        
+        <feImage id="feimage" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAyNCIgaGVpZ2h0PSIzMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiA8Zz4KICA8dGl0bGU+YmFja2dyb3VuZDwvdGl0bGU+CiAgPHJlY3QgZmlsbD0ibm9uZSIgaWQ9ImNhbnZhc19iYWNrZ3JvdW5kIiBoZWlnaHQ9IjMwMiIgd2lkdGg9IjEwMjYiIHk9Ii0xIiB4PSItMSIvPgogPC9nPgoKIDxnPgogIDx0aXRsZT5MYXllciAxPC90aXRsZT4KICA8cmVjdCB4PSIwIiB5PSI4NC41IiB3aWR0aD0iMTAyNCIgaGVpZ2h0PSIxMzMiIGlkPSJzdmdfMSIgZmlsbC1vcGFjaXR5PSJudWxsIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlPSJudWxsIiBmaWxsPSIjMDAwIi8+CiA8L2c+Cjwvc3ZnPg==" x="0%" y="0"  height="300px" result="mask" preserveAspectRatio="none"/>
+        
+        <feComposite in2="mask" in="blur"  operator="in" result="banner" />
+        
+        <feMerge result="merge">
+          <feMergeNode in="SourceGraphic" />
+          <feMergeNode in="banner" />
+        </feMerge> 
+        
+      </filter>
+    </defs>
+  </svg>
+
+  <section class="banner"> 
+    <img src="img/camera.png"/>    
+    
+    <div class="sitetitle">
+      <h1 class="">Classic Cameras</h1>
+        <p class="byline">Timeless pieces from yesteryear</p>
+    </div>
+  </section>
+</body>
+</html>
+
+
+
+
+
+ 

@@ -1,0 +1,14 @@
+    <g class="labels x-labels">
+        <text x="113" y="400">Nov 2017</text>
+        <text x="259" y="400">Dec 2017</text>
+        <text x="405" y="400">Jan 2018</text>
+        <text x="551" y="400">Feb 2018</text>
+        <text x="697" y="400">Mar 2018</text>
+    </g>
+    <g class="labels y-labels">
+        <text x="80" y="15">60%</text>
+        <text x="80" y="131">48%</text>
+        <text x="80" y="248">36%</text>
+        <text x="80" y="365">24%</text>
+        <text x="-10" y="40" transform="rotate(-90)">Device usage</text>
+    </g>

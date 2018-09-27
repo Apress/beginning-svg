@@ -1,0 +1,14 @@
+{
+  "name": "optimize",
+  "version": "1.0.0",
+  "description": "Optimize SVG images",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alex Libby",
+  "license": "ISC",
+  "devDependencies": {
+    "mini-svg-data-uri": "^1.0.1"
+  }
+}

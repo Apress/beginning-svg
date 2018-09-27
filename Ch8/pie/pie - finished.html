@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>Beginning SVG: Creating a Pie Chart</title>
+  <link rel="stylesheet" href="css/pie.css">
+</head>
+<body>
+  <h2>Beginning SVG: Creating a Pie Chart</h2>
+    <svg viewBox="0 0 64 64" preserveAspectRatio="xMidYMid meet" class="pie">
+      <g>
+        <circle class="first" r="16" cx="32" cy="32" stroke-dasharray="43 100"></circle>
+        <text x="75" y="-62" transform="rotate(90) scale(0.5)">Cherries</text>
+      </g>
+      <g>
+        <circle class="second" r="16" cx="32" cy="32" stroke-dasharray="19 100" stroke-dashoffset="-43"></circle>
+        <text x="43" y="-22" transform="rotate(90) scale(0.5)">Oranges</text>
+      </g>
+      <g>
+        <circle class="third" r="16" cx="32" cy="32" stroke-dasharray="14 100" stroke-dashoffset="-62"></circle>
+        <text x="7" y="-43" transform="rotate(90) scale(0.5)">Bananas</text>
+      </g>
+      <g>
+        <circle class="fourth" r="16" cx="32" cy="32" stroke-dasharray="25 100" stroke-dashoffset="-76"></circle>
+        <text x="12" y="-78" transform="rotate(90) scale(0.5)">Apples</text>
+      </g>
+    </svg>
+  </svg>
+</body>
+</html>

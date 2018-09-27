@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'pt_sansregular';
+  src: url('../font/pt_sansregular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'pt_sansregular', sans-serif;
+  font-size: 1.125rem;
+}
+
+svg {
+  margin: -70px 0 0 30px;
+}

@@ -1,0 +1,73 @@
+@font-face {
+  font-family: 'pt_sansregular';
+  src: url('../font/pt_sansregular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'pt_sansregular', sans-serif;
+  padding: 2rem;
+  font-size: 1.125rem;
+  overflow: hidden;
+  height: 100%;
+}
+
+svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 100%;
+}
+
+.banner {
+  height: 17.5rem;
+  margin: 2rem 5% 0;
+  text-align: center;
+  font-weight: 300;
+  overflow: hidden;
+  position: relative;
+}
+
+.sitetitle {
+  background: rgba(0, 0, 25, 0);
+  font-size: 3.5rem;
+  padding: 1.8rem 0;
+  position: absolute;
+  z-index: 1000;
+  line-height: .5rem;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 1);
+  top: 5.5rem;
+  width: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 2.5rem;
+  font-weight: 400;
+  margin: 0;
+  z-index: 100;
+  text-shadow: 0 0 8px rgba(0, 0, 0, .3);
+}
+
+.byline {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  font-family: Merriweather;
+  margin: 0.9rem;
+  z-index: 100;
+  text-shadow: 0 0 8px rgba(0, 0, 0, .3);
+}
+
+img {
+  filter: url(#blurlayer);
+  width: 100%;
+  height: 300px;
+}

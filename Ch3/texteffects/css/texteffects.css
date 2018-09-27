@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+body {
+  font-family: 'Anton', sans-serif;
+  background: #3C3928;
+}
+
+.heading {
+  font-size: 4.5rem;
+}
+
+.headingtext {
+  stroke: rgba(255,255,255,.5);
+  stroke-width: 0.1rem;
+  fill: url(#img-pattern);
+  letter-spacing: 0.1rem;
+}

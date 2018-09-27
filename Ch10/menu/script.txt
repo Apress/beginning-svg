@@ -1,0 +1,44 @@
+var button = document.getElementById("menu"),
+    buttonline = document.getElementById("linegroup"),
+    morph = new TimelineMax({
+      paused: true
+    });
+
+morph.to("#state1", .1, {morphSVG: "#state2", ease: Sine.easeIn, y: 0, fill: "#e73f3f"}, "one") 
+  .to("#state1", .3, {
+    morphSVG: "#state3",
+    ease: Elastic.easeOut.config(2, 0.8),
+    scale: 1.3,
+    x: 0,
+    y: 60
+  }, "two");
+
+button.addEventListener("click", function() {
+  button.classList.toggle('open');
+  if (morph.progress() === 0) {
+    morph.play();
+    $(".menu-c").addClass("radius");
+    $("#linegroup").css({
+      "opacity": "1",
+      "display": "block"
+    });
+
+  } else {
+    morph.tweenFromTo("two", "one")
+    $(".menu-c").removeClass("radius");
+    $("#linegroup").css({
+      "opacity": "0",
+      "display": "none"
+    });
+  }
+});
+
+buttonline.addEventListener("click", function() {
+  button.classList.toggle('open');
+  morph.tweenFromTo("two", "one");
+  $(".menu-c").removeClass("radius");
+  $("#linegroup").css({
+    "opacity": "0",
+    "display": "none"
+  });
+});

@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'pt_sansregular';
+  src: url('../font/pt_sansregular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'pt_sansregular', sans-serif;
+  padding: 2rem;
+  font-size: 1.125rem;
+}
+
+svg {
+  margin: 1.25rem 3.125rem;
+}
+
+.circle-back {
+  stroke: #efefef;
+  stroke-width: 0.3rem;
+  fill: none; 
+}
+
+.circle-front {
+  stroke: url(#gradient); 
+  stroke-width: 0.2rem;
+  stroke-dasharray: 25,100; 
+  stroke-linecap: round;
+  animation: circle-chart-fill 2s reverse;
+  transform: rotate(-90deg);
+  transform-origin: center;
+  fill: none; 
+}
+
+text {
+  font-family: inherit;
+  font-size: 1.2rem;
+  transform: scale(0.5);
+}
+
+@keyframes circle-chart-fill {
+  to { stroke-dasharray: 0 100; }
+}

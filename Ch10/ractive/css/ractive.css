@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'pt_sansregular';
+  src: url('../font/pt_sansregular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'pt_sansregular', sans-serif;
+  padding: 2rem;
+  font-size: 1.125rem;
+}
+
+#pie {
+  width: 40rem;
+  margin-left: 0.3125rem;
+}
+
+#pie svg {
+    float: left;
+    margin-left: -2.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.3125rem;
+    background-color: #f7f4f7;
+    margin-left: 0.3125rem; 
+}
+  
+#pie text {
+    font-size: 0.875rem;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+#pie path {
+    cursor: pointer;
+}
+
+#pie path:hover {
+      opacity: 0.6;
+}
+
+p.tagline {
+  clear: both;
+  font-style: italic;
+  font-size: 0.875rem;
+}

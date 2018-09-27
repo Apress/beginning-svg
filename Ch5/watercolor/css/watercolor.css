@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'pt_sansregular';
+  src: url('../font/pt_sansregular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'pt_sansregular', sans-serif;
+  padding: 2rem;
+  font-size: 18px;
+}
+
+svg {
+  display: none;
+}
+
+img {
+  width: 50%;
+  height: auto;
+}
+
+.watercolor-effect {
+  background-image: url(../img/orchids.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.watercolor-effect:before, .watercolor-effect:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+}
+
+.watercolor-effect:before {
+  background-image: url(../img/orchids.jpg), url(../img/orchids.jpg);
+  background-blend-mode: difference;
+  background-position: calc(50% - 1px) calc(50% - 1px), calc(50% + 1px) calc(50% + 1px);
+  filter: brightness(2) invert(1) grayscale(1);
+  box-shadow: inset 0 0 0 1px black;
+}
+
+.watercolor-effect:after {
+  background-image: url(../img/orchids.jpg);
+  background-position: center;
+  mix-blend-mode: multiply;
+  filter: url(#watercolor);
+}
+
+

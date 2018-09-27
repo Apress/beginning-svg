@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>Beginning SVG: Changing Colors with Filters</title>
+  <link rel="stylesheet" href="css/instagram.css">
+</head>
+<body>
+  <h2>Beginning SVG: Applying Filters à la Instagram</h2>
+
+  <svg width="1198" height="730">
+    <defs>
+      <filter id="amaro">
+
+        <!--- contrast -->
+        <feComponentTransfer color-interpolation-filters="sRGB">
+          <feFuncR type="linear" slope="0.9" intercept="0.049" />
+          <feFuncG type="linear" slope="0.9" intercept="0.049" />
+          <feFuncB type="linear" slope="0.9" intercept="0.049" />
+        </feComponentTransfer>
+
+        <!--- brightness -->
+        <feComponentTransfer color-interpolation-filters="sRGB">
+          <feFuncR type="linear" slope="1.1" />
+          <feFuncG type="linear" slope="1.1" />
+          <feFuncB type="linear" slope="1.1" />
+        </feComponentTransfer>
+
+        <!--- saturate -->
+        <feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="1.394 -0.358 -0.036 0 0 -0.107 1.1575 -0.036 0 0 -0.107 -0.357 1.464 0 0 0 0 0 1 0" />
+      </filter>
+    </defs>
+    <image href="img/landscape.png" x="0" y="0" filter = "url(#amaro)"></image>
+  </svg>
+
+</body>
+</html>

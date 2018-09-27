@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>Beginning SVG: Adding a Custom Easing Effect</title>
+  <link rel="stylesheet" type="text/css" href="css/snapeasing.css">
+  <script src="js/snap.svg-min.js"></script>
+  <script src="js/snap.easing.js"></script>    
+</head>
+<body>
+  <h2>Beginning SVG: Adding a Custom Easing Effect</h2>
+
+  <script>
+    var timing = bezier(0.6, -0.28, 0.735, 0.045);
+    var paper = Snap(800, 800);
+    var r =  paper.rect(0,0,200, 200).attr({fill: "darkslategrey" }); // #2f4f4f
+    r.animate({ x: 600 }, 1000, timing);
+  </script>
+</body>
+</html>

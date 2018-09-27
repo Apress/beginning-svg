@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>Beginning SVG: Creating a Simple SVG Filter</title>
+  <link rel="stylesheet" href="css/simple.css">
+</head>
+<body>
+  <h2>Beginning SVG: Creating a Simple SVG Filter</h2>
+
+  <svg width="230" height="120">
+
+    <filter id="demoBlur">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="5"/>
+    </filter>
+
+    <circle cx="60"  cy="60" r="50" fill="darkgrey" />
+    <circle cx="170" cy="60" r="50" fill="darkgrey" filter="url(#demoBlur)" />
+  </svg>
+
+</body>
+</html>

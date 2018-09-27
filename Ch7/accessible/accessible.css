@@ -1,0 +1,9 @@
+svg {
+  fill: #708090;
+  stroke-width: 0.2;
+  stroke: black;
+  padding: 2rem;
+  border: 1px solid #000;
+  width: 15rem;
+  height: 10rem;
+}

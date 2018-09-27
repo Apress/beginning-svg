@@ -1,0 +1,39 @@
+.node:nth-child(1) .graph {
+  animation-delay: 0.075s;
+}
+.node:nth-child(2) .graph {
+  animation-delay: 0.15s;
+}
+.node:nth-child(3) .graph {
+  animation-delay: 0.225s;
+}
+.node:nth-child(4) .graph {
+  animation-delay: 0.3s;
+}
+.node:nth-child(5) .graph {
+  animation-delay: 0.375s;
+}
+.node:nth-child(6) .graph {
+  animation-delay: 0.45s;
+}
+.node:nth-child(7) .graph {
+  animation-delay: 0.525s;
+}
+
+.graph {
+  opacity: 0;
+  animation-name: animateIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animateIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.6) rotate(-15deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+  }
+}

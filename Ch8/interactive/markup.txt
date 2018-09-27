@@ -1,0 +1,3 @@
+<h2>Beginning SVG: Creating an Interactive Chart</h2>
+<p>A chart to display the most popular browsers in use, as at April 2018:</p>
+<div id="pieChart" class="chart"></div>

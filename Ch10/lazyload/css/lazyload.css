@@ -1,0 +1,13 @@
+@font-face { font-family: 'pt_sansregular'; src: url('../font/pt_sansregular.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+body { margin: 2rem; font-family: 'PT Sans', sans-serif;
+  font-size: 1.125rem; }
+.imageContainer { float: left; height: 0; padding-bottom: 33.33%; position: relative; width: 50%; }
+svg, .image { height: 200%; left: 0; position: absolute;
+  width: 100%; }
+.image { opacity: 0; transition: opacity 300ms; background-size: cover; }
+.image-displayed { opacity: 1; }
+
+@media all and (max-width: 480px) {
+  .imageContainer { padding-bottom: 66.67%; width: 100%; }
+}

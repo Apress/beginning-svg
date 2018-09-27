@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>Beginning SVG: Creating a Bar Chart</title>
+  <link rel="stylesheet" href="css/bar.css">
+</head>
+<body>
+  <h2>Beginning SVG: Creating a Bar Chart</h2>
+  <p>Which languages do you use ?</p>
+  <svg width="960" height="500">
+    <g transform="translate(40,-75)">
+
+      <!-- Create x axis -->
+      <g class="x axis" transform="translate(0,450)">
+        <g class="tick" transform="translate(30.5,0)">
+          <line y2="6" x2="0"></line>
+        </g>
+        <g class="tick" transform="translate(74.5,0)">
+          <line y2="6" x2="0"></line>
+        </g>
+        <g class="tick" transform="translate(116.5,0)">
+          <line y2="6" x2="0"></line>        
+        </g>
+        <g class="tick" transform="translate(164.5,0)">
+          <line y2="6" x2="0"></line>
+        </g>
+        <g class="tick" transform="translate(206.5,0)">
+          <line y2="6" x2="0"></line>
+        </g>
+        <g class="tick" transform="translate(251.5,0)">
+          <line y2="6" x2="0"></line>
+        </g>
+        <path d="M0,6V0H300V6"></path>
+      </g>
+
+      <!-- Create y axis -->
+      <g class="y axis">
+        <g class="tick" transform="translate(0,450)">
+          <line x2="-6" y2="0"></line>
+          <text dy=".32em" x="-9" y="0" style="text-anchor: end;">0</text>
+        </g>
+        <g class="tick" transform="translate(0,414.57)">
+          <line x2="-6" y2="0"></line>
+          <text dy=".32em" x="-9" y="0" style="text-anchor: end;">30</text>
+        </g>
+        <g class="tick" transform="translate(0,379.14)">
+          <line x2="-6" y2="0"></line>
+          <text dy=".32em" x="-9" y="0" style="text-anchor: end;">60</text>
+        </g>
+        <g class="tick" transform="translate(0,343.71)">
+          <line x2="-6" y2="0"></line>
+          <text dy=".32em" x="-9" y="0" style="text-anchor: end;">90</text>
+        </g>
+        <g class="tick" transform="translate(0,308.29)">
+          <line x2="-6" y2="0"></line>
+          <text dy=".32em" x="-9" y="0" style="text-anchor: end;">120</text>
+        </g>
+        <g class="tick" transform="translate(0,272.86)">
+          <line x2="-6" y2="0"></line>
+          <text dy=".32em" x="-9" y="0" style="text-anchor: end;">150</text>
+        </g>
+        <g class="tick" transform="translate(0,237.43)">
+          <line x2="-6" y2="0"></line>
+          <text dy=".32em" x="-9" y="0" style="text-anchor: end;">180</text>
+        </g>
+        <g class="tick" transform="translate(0,202.00)">
+          <line x2="-6" y2="0"></line>
+          <text dy=".32em" x="-9" y="0" style="text-anchor: end;">210</text>
+        </g>
+        <g class="tick" transform="translate(0,166.58)">
+          <line x2="-6" y2="0"></line>
+          <text dy=".32em" x="-9" y="0" style="text-anchor: end;">240</text>
+        </g>
+        <g class="tick" transform="translate(0,131.15)">
+          <line x2="-6" y2="0"></line>
+          <text dy=".32em" x="-9" y="0" style="text-anchor: end;">270</text>
+        </g>
+        <g class="tick" transform="translate(0,95.72)">
+          <line x2="-6" y2="0"></line>
+          <text dy=".32em" x="-9" y="0" style="text-anchor: end;">300</text>
+        </g>
+        <path class="domain" d="M-6,80H0V450H-6"></path>
+        <text transform="rotate(-90)" x="-80" y="6" dy=".71em" style="text-anchor: end;">Usage</text>
+      </g>
+
+      <!-- Add bars, text and stying -->
+      <g>
+        <rect class="bar" x="10" width="41" y="200.66" height="249"></rect>
+        <text class="bartext" dy=".71em" y="15" x="-255" transform="rotate(-90)">jQuery</text>
+      </g>
+      <g>
+        <rect class="bar" x="54" width="41" y="397.14" height="52"></rect>
+        <text class="bartext" dy=".71em" y="64" x="-430" transform="rotate(-90)">Riot</text>
+      </g>
+      <g>
+        <rect class="bar" x="98" width="41" y="351.44" height="98"></rect>
+        <text class="bartext" dy=".71em" y="104" x="-400" transform="rotate(-90)">React</text>
+      </g>
+      <g>
+        <rect class="bar" x="142" width="41" y="299.32" height="150"></rect>
+        <text class="bartext" dy=".71em" y="149" x="-350" transform="rotate(-90)">Vue.js</text>
+      </g>
+      <g>
+        <rect class="bar" x="186" width="41" y="150" height="300"></rect>
+        <text class="bartext" dy=".71em" y="194" x="-227" transform="rotate(-90)">JavaScript</text>
+      </g>
+      <g>
+        <rect class="bar" x="230" width="41" y="368.94" height="81"></rect>
+        <text class="bartext" dy=".71em" y="240" x="-430" transform="rotate(-90)">Node.js</text>
+      </g>
+    </g>
+  </svg>
+</body>
+</html>

@@ -1,0 +1,34 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+
+*, html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 1rem;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  color: #000;
+  margin: 0 0 3.125rem;
+  font-size: 2.125rem;
+  padding: 1.25rem 0;
+  font-family: 'PT Sans', sans-serif;
+}
+
+svg {
+  margin: 1.25rem;
+  margin-top: -0.625rem;
+  display: inline-block;
+  height: 4rem;
+  width: 4rem;
+}
+
+svg path, svg rect, svg circle{
+  fill: #708090;
+}

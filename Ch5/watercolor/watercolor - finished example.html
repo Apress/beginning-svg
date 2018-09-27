@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>Beginning SVG: Applying a Watercolor Filter</title>
+  <link rel="stylesheet" href="css/watercolor.css">
+</head>
+<body>
+  <h2>Beginning SVG: Applying a Watercolor Filter</h2>
+
+  <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <filter id="watercolor" width="200%" height="150%" x="0" y="0">
+        <feComponentTransfer result="bright">
+          <feFuncR type="linear" slope="1.3"/>
+          <feFuncG type="linear" slope="1.3"/>
+          <feFuncB type="linear" slope="1.3"/>
+        </feComponentTransfer>
+        
+        <feGaussianBlur stdDeviation="2"  edgeMode="none" result="blur1"/>
+        
+        <feComponentTransfer result="contrast">
+          <feFuncR type="linear" slope="2" intercept="-0.5"/>
+          <feFuncG type="linear" slope="2" intercept="-0.5"/>
+          <feFuncB type="linear" slope="2" intercept="-0.5"/>
+        </feComponentTransfer>
+        
+        <feMerge> 
+          <feMergeNode in="bright"/> 
+          <feMergeNode in="blur" /> 
+          <feMergeNode in="contrast" /> 
+        </feMerge>
+      </filter>     
+    </defs>
+  </svg>
+  
+  <div class="preview watercolor-effect">
+    <img src="img/orchids.jpg" alt="Image of orchids">
+  </div>
+</body>
+</html>

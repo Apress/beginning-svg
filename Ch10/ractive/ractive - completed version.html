@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Beginning SVG: Creating Population Charts</title>  
+    <link rel="stylesheet" type="text/css" href="css/ractive.css">
+  </head>
+  <body>
+    <div id='pie'></div>
+    
+    <script id='myTemplate' type='text/ractive'>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title">Beginning SVG: Creating Population Charts</h2>
+        </div>
+        <div class="panel-body">
+          <svg width=375 height=400>
+            <g transform="translate(180, 200)">
+              {{# Pie({center: center, r: r, R: R, data: countries, accessor: accessor, colors: colors}) }}
+                {{# curves:num }}
+                  <g transform="translate({{ move(sector.centroid, expanded[num]) }})">
+                    <linearGradient id = "grad-{{ num }}">
+                      <stop stop-color = "{{ color_string(color) }}" offset = "0%"/>
+                      <stop stop-color = "{{ lighten(color) }}" offset = "100%"/>
+                    </linearGradient>
+                    <path d="{{ sector.path.print() }}" fill="url(#grad-{{ num }})" />
+                    <text text-anchor="middle" transform="translate({{ point(sector.centroid) }})">{{ 
+                    item.name }} ({{ item.population }}m)</text>
+                  </g>
+                {{/ curves }}
+              {{/ end of pie}}
+            </g>
+          </svg>
+          <p class="tagline">Numbers shown in millions</p>
+        </div>
+      </div>
+    </script>    
+    <script data-main="js/demo" src="js/require.js"></script>
+  </body>
+</html>
+

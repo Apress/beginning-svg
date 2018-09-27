@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'pt_sansregular';
+  src: url('../font/pt_sansregular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'pt_sansregular', sans-serif;
+  padding: 2rem;
+  font-size: 1.125rem;
+}
+
+svg {
+  margin: 1.25rem 3.125rem;
+  float: left;
+}
+
+#bar_chart{
+  height: 13.75rem;
+  float: left;
+  width: 13.75rem;
+}
+
+#buttons{
+  float: left;
+  width: 9.375rem;
+  margin-left: 16rem;
+  position: absolute;
+  cursor: pointer;
+  margin-top: -1rem;
+}
+
+#button1, #button2 {
+  height: 2.5rem;
+  stroke-width: 0.0625rem;
+  stroke: #ccc;
+}
+
+text {
+  stroke: #000;
+  text-align: center;
+}

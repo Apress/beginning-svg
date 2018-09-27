@@ -1,0 +1,49 @@
+      <!-- Create y axis -->
+      <g class="y axis">
+        <g class="tick" transform="translate(0,450)">
+          <line x2="-6" y2="0"></line>
+          <text dy=".32em" x="-9" y="0" style="text-anchor: end;">0</text>
+        </g>
+        <g class="tick" transform="translate(0,414.57)">
+          <line x2="-6" y2="0"></line>
+          <text dy=".32em" x="-9" y="0" style="text-anchor: end;">30</text>
+        </g>
+        <g class="tick" transform="translate(0,379.14)">
+          <line x2="-6" y2="0"></line>
+          <text dy=".32em" x="-9" y="0" style="text-anchor: end;">60</text>
+        </g>
+        <g class="tick" transform="translate(0,343.71)">
+          <line x2="-6" y2="0"></line>
+          <text dy=".32em" x="-9" y="0" style="text-anchor: end;">90</text>
+        </g>
+        <g class="tick" transform="translate(0,308.29)">
+          <line x2="-6" y2="0"></line>
+          <text dy=".32em" x="-9" y="0" style="text-anchor: end;">120</text>
+        </g>
+        <g class="tick" transform="translate(0,272.86)">
+          <line x2="-6" y2="0"></line>
+          <text dy=".32em" x="-9" y="0" style="text-anchor: end;">150</text>
+        </g>
+        <g class="tick" transform="translate(0,237.43)">
+          <line x2="-6" y2="0"></line>
+          <text dy=".32em" x="-9" y="0" style="text-anchor: end;">180</text>
+        </g>
+        <g class="tick" transform="translate(0,202.00)">
+          <line x2="-6" y2="0"></line>
+          <text dy=".32em" x="-9" y="0" style="text-anchor: end;">210</text>
+        </g>
+        <g class="tick" transform="translate(0,166.58)">
+          <line x2="-6" y2="0"></line>
+          <text dy=".32em" x="-9" y="0" style="text-anchor: end;">240</text>
+        </g>
+        <g class="tick" transform="translate(0,131.15)">
+          <line x2="-6" y2="0"></line>
+          <text dy=".32em" x="-9" y="0" style="text-anchor: end;">270</text>
+        </g>
+        <g class="tick" transform="translate(0,95.72)">
+          <line x2="-6" y2="0"></line>
+          <text dy=".32em" x="-9" y="0" style="text-anchor: end;">300</text>
+        </g>
+        <path class="domain" d="M-6,80H0V450H-6"></path>
+        <text transform="rotate(-90)" x="-80" y="6" dy=".71em" style="text-anchor: end;">Usage</text>
+      </g>

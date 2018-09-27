@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'pt_sansregular';
+  src: url('../font/pt_sansregular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'pt_sansregular', sans-serif;
+  padding-left: 20rem;
+  padding-right: 20rem;
+  font-size: 1.125rem;
+}
+
+h2 {
+  width: 37.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+

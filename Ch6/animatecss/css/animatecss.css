@@ -1,0 +1,147 @@
+@font-face {
+  font-family: 'pt_sansregular';
+  src: url('../font/pt_sansregular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'pt_sansregular', sans-serif;
+  padding: 2rem;
+  font-size: 1.125rem;
+}
+
+.container {
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+  min-height: 35rem;
+  background-image: url('../img/background.jpg');
+  background-blend-mode: soft-light;
+  background-size: cover;
+  background-position: center center;
+  padding: 2rem;
+}
+
+.bird {
+  background-image: url('../img/birds.svg');
+  background-size: auto 100%;
+  width: 5.5rem;
+  height: 7.8125rem;
+  will-change: background-position;
+  animation-name: fly-cycle;
+  animation-timing-function: steps(10);
+  animation-iteration-count: infinite;
+}
+
+.bird-one {
+  animation-duration: 1s;
+  animation-delay: -0.5s;
+}
+.bird-two {
+  animation-duration: 0.9s;
+  animation-delay: -0.75s;
+}
+
+.bird-container {
+  position: absolute;
+  top: 20%;
+  left: -7.5vw;
+  transform: scale(0);
+  will-change: transform;
+  animation-name: fly-right-one;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.bc-one {
+  animation-duration: 15s;
+  animation-delay: 0;
+}
+
+.bc-two {
+  animation-duration: 16s;
+  animation-delay: 1s;
+}
+
+@keyframes fly-cycle {
+  100% {
+    background-position: -56.25rem 0;
+  }
+}
+
+@keyframes fly-right-one {
+  0% {
+    left: -10%;
+    transform: scale(0.3);
+  }
+  10% {
+    left: 10%;
+    transform: translateY(2vh) scale(0.4);
+  }
+  20% {
+    left: 30%;
+    transform: translateY(0vh) scale(0.5);
+  }
+  30% {
+    left: 50%;
+    transform: translateY(4vh) scale(0.6);
+  }
+  40% {
+    left: 70%;
+    transform: translateY(2vh) scale(0.6);
+  }
+  50% {
+    left: 90%;
+    transform: translateY(0vh) scale(0.6);
+  }
+  60% {
+    left: 110%;
+    transform: translateY(0vh) scale(0.6);
+  }
+  100% {
+    left: 110%;
+    opacity: 1;
+    transform: translateY(0vh) scale(0.6);
+  }
+}
+
+@keyframes fly-right-two {
+  0% {
+    left: -10%;
+    opacity: 1;
+    transform: translateY(-2vh) scale(0.5);
+  }
+  10% {
+    left: 10%;
+    transform: translateY(0vh) scale(0.4);
+  }
+  20% {
+    left: 30%;
+    transform: translateY(-4vh) scale(0.6);
+  }
+  30% {
+    left: 50%;
+    transform: translateY(1vh) scale(0.45);
+  }
+  40% {
+    left: 70%;
+    transform: translateY(-2.5vh) scale(0.5);
+  }
+  50% {
+    left: 90%;
+    transform: translateY(0vh) scale(0.45);
+  }
+  51% {
+    left: 110%;
+    transform: translateY(0vh) scale(0.45);
+  }
+  100% {
+    left: 110%;
+    transform: translateY(0vh) scale(0.45);
+  }
+}

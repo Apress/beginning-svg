@@ -1,0 +1,57 @@
+// define variables
+var svg, svgStar, rotation = 0, a = 0;
+var svgns = "http://www.w3.org/2000/svg";
+var circleBtn = document.querySelector("#btn");
+var svgBox = document.querySelector("#site");
+var circleBtn = document.querySelector("#btn");
+
+// Create SVG polygon shape in code
+var polygon = document.createElementNS(svgns, "polygon");
+polygon.setAttributeNS(null, "points", "150,10 200,140 110,160");
+svg = document.getElementById('site').appendChild(polygon);
+polygon.id = "triangle";
+
+// Create SVG star and fill it in code
+var star = document.createElementNS(svgns, "polygon");
+star.setAttributeNS(null, "points", "100,10 40,198 190,78 10,78 160,198");
+star.setAttributeNS(null, "fill", "gainsboro");
+svg = document.getElementById('site').appendChild(star);
+star.id = "star";
+
+// Create bezier curve and add to page
+var bezier = document.createElementNS(svgns, "path");
+bezier.setAttributeNS(null, "d", "M40,125 C15,5 110,5 120,55");
+bezier.setAttribute("fill", "none");
+bezier.setAttribute("stroke", "#333");
+bezier.setAttribute("stroke-width", "2");
+svg = document.getElementById('site').appendChild(bezier);
+bezier.id = "bezier";
+
+
+// Move viewBox on click of circle
+circleBtn.addEventListener('click', moveSVG, false);
+
+function moveSVG() {
+	a-= 10;
+	svgBox.setAttributeNS(null, "viewBox", a + " " + a + " 200 150");
+}
+
+// Show message on click of star
+star.addEventListener('click', click, false);
+
+function click(e) {
+  alert("star clicked!");
+}
+
+// Fill a shape with random colors
+document.querySelector("#triangle").addEventListener('click', setFillColor, false);
+
+function setFillColor() {
+  var triangle = document.getElementById('triangle');
+   
+  var r = Math.floor(Math.random() * 255);
+  var g = Math.floor(Math.random() * 255);
+  var b = Math.floor(Math.random() * 255);
+  triangle.style.fill = 'rgb(' + r + ', ' + g + ' , ' + b + ')';
+}
+

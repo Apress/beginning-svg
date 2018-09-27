@@ -1,0 +1,7 @@
+    <g class="points">
+      <circle cx="113" cy="192" data-value="39.4" r="5"></circle>
+      <circle cx="259" cy="171" data-value="41.5" r="5"></circle>
+      <circle cx="405" cy="179" data-value="40.6" r="5"></circle>
+      <circle cx="551" cy="200" data-value="39.0" r="5"></circle>
+      <circle cx="697" cy="204" data-value="37.9" r="5"></circle>
+    </g>

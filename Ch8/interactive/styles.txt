@@ -1,0 +1,57 @@
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'pt_sansregular', sans-serif;
+  padding: 2rem;
+  font-size: 1.125rem;
+}
+
+p {
+  margin-top: 0.625rem;
+}
+
+.chart {
+  position: absolute;
+  width: 28.125rem;
+  height: 28.125rem;
+  top: 68%;
+  left: 48%;
+  margin: -17.1875rem 0 0 -17.1875rem;
+}
+
+.pieTip {
+  position: absolute;
+  float: left;
+  min-width: 1.875rem;
+  max-width: 18.75rem;
+  padding: 0.3125rem 1.125rem 0.375rem;
+  border-radius: 0.125rem;
+  background: rgba(255,255,255,.97);
+  color: #444;
+  font-size: 1.1875rem;
+  text-shadow: 0 1px 0 #fff;
+  text-align: center;
+  letter-spacing: .06rem;
+  box-shadow: 0 0 0.1875rem rgba(0,0,0,0.2), 0 0.0625rem 0.125rem rgba(0,0,0,0.5);
+  transform: all .3s;
+}
+
+.pieTip:after {
+   position: absolute;
+   left: 50%;
+   bottom: -0.375rem;
+   content: "";
+   height: 0;
+   margin: 0 0 0 -0.375rem;
+   border-right: 0.3125rem solid transparent;
+   border-left: 0.3125rem solid transparent;
+   border-top: 0.375rem solid rgba(255,255,255,.95);
+   line-height: 0;
+}
+
+.chart path { cursor: pointer; }

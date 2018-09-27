@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'pt_sansregular';
+  src: url('../font/pt_sansregular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  text-align: center;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'pt_sansregular', sans-serif;
+  padding: 2rem;
+  font-size: 1.125rem;
+}
+
+img {
+  position: relative;
+  filter: sepia(10);
+}
+
+rect {
+  stroke-dasharray: 150 210;
+  stroke-dashoffset: 0;
+  stroke-width: 0.1875rem;
+  fill: transparent;
+  stroke: #b491a1;
+  border-bottom: 0.3125rem solid black;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+
+.container {
+  position: relative;
+  top: 0.625rem;
+  margin: 0 auto;
+  width: 40.9375rem;  
+}
+
+.container:hover rect {
+  stroke-width: 0.375rem;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 2560;
+}
+
+.content {
+  font-size: 1.375rem;
+  line-height: 2rem;
+  letter-spacing: 0.5rem;
+  color: #fff;
+  top: -29.875rem;
+  position: relative;
+  color: #b491a1;
+}
+
+.content p {
+  margin-top: 0.3125rem;
+}
+
+

@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'pt_sansregular';
+  src: url('../font/pt_sansregular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h2 {
+  font-family: 'pt_sansregular', sans-serif;
+  padding: 2rem;
+  font-size: 1.125rem;
+}
+
+#Calque_1 {
+  padding: 0;
+  margin: 0;
+}
+
+.capsText, .redText, .lineDrawing, .swirls {
+  fill: #fff;
+}
+
+.capsText{
+  fill:#1a1a1a;
+}
+
+.redText {
+  fill:#881b30
+}
+
+.lineDrawing {
+  fill: #627c55
+}
+
+.swirls { 
+  fill: #a09830;
+}

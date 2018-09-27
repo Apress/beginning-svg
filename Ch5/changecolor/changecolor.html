@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>Beginning SVG: Changing Colors with Filters</title>
+  <link rel="stylesheet" href="css/changecolor.css">
+</head>
+<body>
+  <h2>Beginning SVG: Changing Colors with Filters</h2>
+
+  <svg width="1198" height="730">
+    <defs>
+      <filter id="colorChange">
+        <feColorMatrix type = "matrix" values="0 0 0 0 0 0 0.47 0 0 0 0 0 0.15 0 0 0 0 0 1 0 "/>
+      </filter>
+    </defs>
+
+    <image href="img/landscape.png" x="0" y="0" filter = "url(#colorChange)"></image>
+
+  </svg>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'pt_sansregular';
+  src: url('../font/pt_sansregular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'pt_sansregular', sans-serif;
+  padding: 2rem;
+  font-size: 1.125rem;
+}
+
+text {
+  fill: #fff;
+  font-size: 2rem;
+  transition: all 0.3s;
+}
+
+.label {
+  fill: #000;
+  font-size: 2rem;
+}
+
+.chart {
+  max-width: 37.5rem;
+  max-height: 37.5rem;
+}
+
+.chart-svg {
+  width: 100%;
+  height: 100%;
+}
+
+

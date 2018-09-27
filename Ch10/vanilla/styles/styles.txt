@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+body {
+  font-family: "PT Sans", sans-serif;
+  color: antiquewhite;
+}
+
+#container {
+  margin: 6rem;
+}
+
+svg {
+  border: 1px solid #000;
+  font-size: 36px;
+}
+
+circle {
+  fill: slategrey;
+  cursor: pointer;
+}
+
+#triangle {
+  fill: darkgrey;
+  stroke: black;
+  stroke-width: 1;
+  transform: scale(0.5);
+  width: 150px;
+  cursor:pointer;
+}
+
+#star {
+  fill: antiquewhite;
+  transform: translate(150px, 40px);
+  cursor: pointer;
+}
+
+/*#square:hover {
+  transform-origin: 10% 10%;
+  animation: spin 5s ease-out 1s;
+} */
+
+#btn {
+  cursor:pointer;
+}
+
+@keyframes spin { 
+    100% { transform:rotate(360deg); } 
+}

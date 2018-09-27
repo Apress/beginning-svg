@@ -1,0 +1,22 @@
+      <!-- Create x axis -->
+      <g class="x axis" transform="translate(0,450)">
+        <g class="tick" transform="translate(30.5,0)">
+          <line y2="6" x2="0"></line>
+        </g>
+        <g class="tick" transform="translate(74.5,0)">
+          <line y2="6" x2="0"></line>
+        </g>
+        <g class="tick" transform="translate(116.5,0)">
+          <line y2="6" x2="0"></line>        
+        </g>
+        <g class="tick" transform="translate(164.5,0)">
+          <line y2="6" x2="0"></line>
+        </g>
+        <g class="tick" transform="translate(206.5,0)">
+          <line y2="6" x2="0"></line>
+        </g>
+        <g class="tick" transform="translate(251.5,0)">
+          <line y2="6" x2="0"></line>
+        </g>
+        <path d="M0,6V0H300V6"></path>
+      </g>
